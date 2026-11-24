@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <div>
+        <form id="form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="enter your full name">
+            <p id="nameError" class="error"></p>
+            <label for="email">Email Adress</label>
+            <input type="email"  id="email" placeholder="name@example">
+            <p id="emailError" class="error"></p>
+            <label for="number">Phone Number</label>
+            <input type="number" id="number" placeholder="your active phone number">
+            <p id="phoneError" class="error"></p>
+            <label>KCSE Result Slip</label>
+            <input type="file" id="slip">
+            <p id="slipError" class="error"></p>
+            <label>KCSE Leaving Certificate</label>
+            <input type="file" id="certificate">
+            <p id="certificateError" class="error"></p>
+        <div id="levels">
+            <p>Choose your level of study you wish to enroll for</p>
+            <label><input type="radio" name="study level" value="degree">Degree</label>
+            <label><input type="radio" name="study level" value="masters">Masters</label>
+            <label><input type="radio" name="study level" value="PhD">PhD</label>
+
+        </div>
+        <button type="submit">Submit</button>
+        <p id="result"></p>
+        </form>
+
+    </div>
+
+<script src="apply.js"></script>
+</body>
+</html>

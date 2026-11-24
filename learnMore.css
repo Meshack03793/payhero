@@ -1,0 +1,83 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.welcome h2{
+      font-size: 1.9rem;
+      padding: 16px;
+      color: rgb(239, 245, 239);
+      background-color: rgb(8, 175, 8);
+      border-radius: 9px;
+      margin: 17px;
+}
+.welcome p{
+   background-color: transparent;
+   font-size: 1.2rem;
+   padding: 17px;
+   color:black;
+}
+.message {
+    font-size: 1.3rem;
+    color: rgb(10, 165, 74);
+    padding: 18px; 
+    background-color: #d9ebdc;
+    margin: 17px;
+    color:rgb(26, 7, 7);
+    border-radius: 9px;
+}
+
+.images{
+    width: 50%;
+    height: 50%;
+    border-radius: 9px;
+    display: block;
+    margin-right: auto;
+    margin: 20px;
+}
+h2{
+    font-size: 2.0rem;
+    padding: 16px;
+    color: rgb(239, 245, 239);
+    background-color: rgb(8, 175, 8);
+    border-radius: 9px;
+    margin: 17px;
+
+}
+.para{
+    font-size: 19px;
+    padding: 17px;
+    background-color: #d9ebdc;
+    border-radius: 10px;
+    color: rgb(3, 17, 29);
+    margin: 17px;
+ }
+ .para b{
+    color: rgb(10, 165, 74);
+    font-size: 1.5rem;
+ }
+
+ h3{
+    font-size: 1.6rem;
+    color: rgb(10, 165, 74);
+    padding: 18px; 
+
+}
+ 
+
+ ul li p b{
+    font-weight: 600px;
+    color: rgb(4, 14, 4);
+    margin-bottom: 0;
+ }
+
+ ul{
+    border-right: 4px solid rgb(63, 105, 63);
+    margin: 17px;
+ }
+
+ .welcome{
+    color: rgb(14, 107, 56);
+ }
+ 

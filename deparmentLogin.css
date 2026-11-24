@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(8, 5, 5);
+}
+#form h1{
+    color: #07c517;
+    text-align: center;
+    font-size: 37px;
+}
+#login{
+    background-color: blanchedalmond;
+    width: 450px;
+    border-radius: 10px;
+    margin: 20px;
+}
+#form{
+    margin: 30px;
+    width: 100%;
+    font-size: 22px;
+    border-color: 2px solid gray;
+}
+
+#form input{
+    width: 80%;
+    height: 35px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+#button{
+    font-size: 26px;
+    margin-bottom: 19px;
+    background-color: rgb(14, 235, 32);
+    color: aliceblue;
+    border-radius: 8px;
+    width: 30%;
+    margin-left: 90px;
+}
+#button:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.error{
+    color: red;
+}
+
+.ok{
+    color: green;
+}

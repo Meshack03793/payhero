@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egerton Computer Science Department</title>
+    <link rel="stylesheet" href="department.css">
+    <script src="https://kit.fontawesome.com/1178a756b1.js"></script>
+</head>
+<body>
+    <button id="menuButton" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+    <nav id="mobileMenu" class="mobile-menu" hidden>
+        <button id="closeMenuButton" aria-label="Close Menu">✕</button>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#programmes">Programmes</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="page active">
+        <div class="hero">
+            <h2>Welcome to Department of Computer Science</h2>
+            <img src="images/home.jpeg" class="home-image">
+            <p>Welcome to the Computer Science Department at Egerton University.We are committed to providing quality education,research and innovation and information technology</p>
+            <button id="learnMore" class="button">Learn more</button>
+
+        </div>
+        <section class="offer">
+            <h2>What we offer</h2>
+        <div class="card">
+            <h3>Research</h3>
+            <img src="images/research.jpeg" class="research-image">
+            <p>Students and lecturers participate in research and technological innovation</p>
+        </div>
+        <div class="card">
+            <h3>Innovation</h3>
+            <img src="images/innovation.jpeg" class="innovation-image">
+            <p>We encourage students to develop technologicl solutions to the real world problems</p>
+        </div>
+        </section>
+
+    </section>
+    <section id="about" class="page">
+        <h2>About the Department</h2>
+        <img src="images/complex.jpeg" class="complex-image">
+        <p>Department of Computer Science is dedicated to teaching ,research and innovation in the field of computing</p>
+        <p>The department equips students with skills in programming,software development,databases,networking,artificial intelligence,cybersecurity and other fields of computing </p>
+        <h3>Our Vision</h3>
+        <p>To be leading department in computer science eduaction,research and innovation</p>
+        <h3>Our Mission</h3>
+        <p>To provide quality education and conduct research that contributes to technological and societal development</p>
+
+    </section>
+    <section id="programmes" class="page">
+        <h2>Academic Programmes</h2>
+        <p>We offers programmes that prepare students for future careers in computing and information technology</p>
+        <div class="card">
+            <div>
+                <h2>Undergraduate Programmes</h2>
+                <h3>B.sc in Computer Science</h3>
+                <p>Comprehensive training in algorithms,sofware development,systems architecture and computing theory</p>
+            </div>
+            <div>
+                <h3>B.sc in Applied Computer Science</h3>
+                <p>Focuses on practical software engineering,enterprise systems and solving industry-specific challenges</p>
+
+            <div>
+                <h2 class="post">Postgraduate Programmes</h2>
+                <h3>M.sc in Computer Science</h3>
+                <p>Advanced studies and specializedresearch in emerging computing domains</p>
+                <h3>Ph.D in Computer Science</h3>
+                <p>Rigoral doctoral research aimed at advancing scientific knowledge in computer science</p>
+                
+
+            </div>
+        </div>
+
+    </section>
+    <section id="news" class="page">
+        <h2>Latest News</h2>
+        <article class="news-item">
+            <h3>Computer Science Seminar</h3>
+            <p>The department will host a technology seminar where students can learn about current development in computing</p>
+            <small>Posted:October 2026</small>
+            <article class="new-item">
+                <h3>Student Programming Competiton</h3>
+                <p>Computer Science students are invited to participate in an upcoming programming competion</p>
+                <small>Posted:December2026</small>
+            </article>
+
+        </article>
+    </section>
+    <section id="students" class="page">
+        <h2>Students Information</h2>
+        <p>The section provides useful information and resources for Computer Science students</p>
+        <ul class="student-list">
+            <li>Student registration</li>
+            <li>Course information</li>
+            <li>Examination information</li>
+            <li>Students projescts</li>
+            <li>industrial attachment</li>
+            <li>Department events</li>
+        </ul>
+    </section>
+    <div>
+        <button type="submit" id="apply" class="apply">APPLY NOW</button>
+    </div>
+    <section id="contact" class="page">
+        <h2>Contact Us</h2>
+        <p>Have a question ?Get in touch with Computer Science Department</p>
+        <div class="contact-info">
+            <p>
+                <strong>Email:</strong>
+                egertoncomputerscience@example.com
+            </p>
+            <p>
+                <strong>Phone</strong>
+                +254115864791
+            </p>
+            <P>
+                <strong>Location:</strong>
+                Egerton University,Njoro,Kenya
+            </P>
+        </div>
+        <h3>Send us a message</h3>
+        <form id="textForm">
+            <input id="name" type="text" placeholder="Your Name" required><br>
+            <input id="email" type="text" placeholder="Your Email" required><br>
+            <textarea id="textarea" placeholder="Your message" required ></textarea><br>
+            <button type="submit" class="submit">Send Message</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <p>&copy;2026 Computer Science Department | Egerton University</p>
+    </footer>
+    <p class="error"></p>
+    <p class="ok"></p>
+    <script src="department.js"></script>
+</body>
+</html>
+   
