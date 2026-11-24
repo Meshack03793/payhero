@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egerton Computer Science Department</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="view-home" class="site-view home-view">
+        <button id="menuButton" aria-expanded="false" aria-controls="mobileMenu" type="button">☰</button>
+        <nav id="mobileMenu" class="mobile-menu" hidden>
+            <button id="closeMenuButton" aria-label="Close Menu" type="button">✕</button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programmes">Programmes</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#students">Students</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="home" class="page active">
+            <div class="hero">
+                <h2>Welcome to Department of Computer Science</h2>
+                <img src="images/home.jpeg" class="home-image" alt="Egerton University campus">
+                <p>Welcome to the Computer Science Department at Egerton University.We are committed to providing quality education,research and innovation and information technology</p>
+                <button id="learnMore" class="button" type="button">Learn more</button>
+            </div>
+            <section class="offer">
+                <h2>What we offer</h2>
+                <div class="card">
+                    <h3>Research</h3>
+                    <img src="images/research.jpeg" class="research-image" alt="Computer science research">
+                    <p>Students and lecturers participate in research and technological innovation</p>
+                </div>
+                <div class="card">
+                    <h3>Innovation</h3>
+                    <img src="images/innovation.jpeg" class="innovation-image" alt="Technology innovation">
+                    <p>We encourage students to develop technologicl solutions to the real world problems</p>
+                </div>
+            </section>
+        </section>
+
+        <section id="about" class="page">
+            <h2>About the Department</h2>
+            <img src="images/complex.jpeg" class="complex-image" alt="Computer science students collaborating">
+            <p>Department of Computer Science is dedicated to teaching ,research and innovation in the field of computing</p>
+            <p>The department equips students with skills in programming,software development,databases,networking,artificial intelligence,cybersecurity and other fields of computing </p>
+            <h3>Our Vision</h3>
+            <p>To be leading department in computer science eduaction,research and innovation</p>
+            <h3>Our Mission</h3>
+            <p>To provide quality education and conduct research that contributes to technological and societal development</p>
+        </section>
+
+        <section id="programmes" class="page">
+            <h2>Academic Programmes</h2>
+            <p>We offers programmes that prepare students for future careers in computing and information technology</p>
+            <div class="card">
+                <div>
+                    <h2>Undergraduate Programmes</h2>
+                    <h3>B.sc in Computer Science</h3>
+                    <p>Comprehensive training in algorithms,sofware development,systems architecture and computing theory</p>
+                </div>
+                <div>
+                    <h3>B.sc in Applied Computer Science</h3>
+                    <p>Focuses on practical software engineering,enterprise systems and solving industry-specific challenges</p>
+                    <div>
+                        <h2 class="post">Postgraduate Programmes</h2>
+                        <h3>M.sc in Computer Science</h3>
+                        <p>Advanced studies and specializedresearch in emerging computing domains</p>
+                        <h3>Ph.D in Computer Science</h3>
+                        <p>Rigoral doctoral research aimed at advancing scientific knowledge in computer science</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="page">
+            <h2>Latest News</h2>
+            <article class="news-item">
+                <h3>Computer Science Seminar</h3>
+                <p>The department will host a technology seminar where students can learn about current development in computing</p>
+                <small>Posted:October 2026</small>
+                <article class="new-item">
+                    <h3>Student Programming Competiton</h3>
+                    <p>Computer Science students are invited to participate in an upcoming programming competion</p>
+                    <small>Posted:December2026</small>
+                </article>
+            </article>
+        </section>
+
+        <section id="students" class="page">
+            <h2>Students Information</h2>
+            <p>The section provides useful information and resources for Computer Science students</p>
+            <ul class="student-list">
+                <li>Student registration</li>
+                <li>Course information</li>
+                <li>Examination information</li>
+                <li>Students projescts</li>
+                <li>industrial attachment</li>
+                <li>Department events</li>
+            </ul>
+        </section>
+
+        <div>
+            <button type="button" id="apply" class="apply">APPLY NOW</button>
+        </div>
+
+        <section id="contact" class="page">
+            <h2>Contact Us</h2>
+            <p>Have a question ?Get in touch with Computer Science Department</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> egertoncomputerscience@example.com</p>
+                <p><strong>Phone</strong> +254115864791</p>
+                <p><strong>Location:</strong> Egerton University,Njoro,Kenya</p>
+            </div>
+            <h3>Send us a message</h3>
+            <form id="textForm">
+                <input id="contactName" type="text" placeholder="Your Name" required><br>
+                <input id="contactEmail" type="text" placeholder="Your Email" required><br>
+                <textarea id="textarea" placeholder="Your message" required></textarea><br>
+                <button type="submit" class="submit">Send Message</button>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <p>&copy;2026 Computer Science Department | Egerton University</p>
+        </footer>
+        <p class="error"></p>
+        <p class="ok"></p>
+    </main>
+
+    <main id="view-learn-more" class="site-view learn-more-view" hidden>
+        <div class="welcome">
+            <h2>Shaping the future of computing and innovation</h2>
+            <p>The Department of Computer Science is hub for technological excellence,research and practical innovation.We bridge gap between computing theory and and real-world applications by equiping students with the skills in software engineering,artificial intelligence,machine learning,data science and cybersecurity.</p>
+        </div>
+        <div class="message">
+            <h3>Message from the Head of Department</h3>
+            <p><b>Welcome to the Department of Computer Science!</b></p>
+            <p>We are excited to have you join our community of learners and researchers. Our department is dedicated to providing a world-class education in computer science, with a focus on innovation and real-world applications.</p>
+            <p><b>Dr. Meshack Ayuyo</b><br><i>Chairperson, Department of Computer Science</i></p>
+        </div>
+        <div>
+            <h3>Research Areas</h3>
+            <ul>
+                <li><p class="para"><b>Artificial Intelligence and Machine Learning:</b>
+                    <img src="images/artificial.jpeg" class="images" alt="Artificial intelligence research">
+                    Predictive analytics,computer vision and intelligent automation</p></li>
+                <li><p class="para"><b>Data Science and Big Data Analytics:</b>
+                    <img src="images/data.jpeg" class="images" alt="Data science research">
+                    Data mining,data visualization and predictive modeling</p></li>
+                <li><p class="para"><b>Cybersecurity and Information Assurance:</b>
+                    <img src="images/cybersecurity.jpeg" class="images" alt="Cybersecurity research">
+                    Network security,cryptography,data protection and risk management</p></li>
+                <li><p class="para"><b>Software Engineering and Development:</b>
+                    <img src="images/software.jpeg" class="images" alt="Software engineering research">
+                    Agile methodologies,software testing and DevOps practices</p></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Student's Clubs and Societies</h3>
+            <p class="para"><b class="welcome">EUCOSSA: </b>
+                <img src="images/eucossa (1).jpeg" class="images" alt="EUCOSSA student society">
+                A Computer Science Student Organization that offers opportunities for students to engage in technical activities and professional development.</p>
+        </div>
+    </main>
+
+    <main id="view-apply" class="site-view apply-view" hidden>
+        <form id="applicationForm">
+            <label for="applicationName">Full Name</label>
+            <input type="text" id="applicationName" placeholder="enter your full name">
+            <p id="applicationNameError" class="error"></p>
+            <label for="applicationEmail">Email Adress</label>
+            <input type="email" id="applicationEmail" placeholder="name@example">
+            <p id="applicationEmailError" class="error"></p>
+            <label for="applicationNumber">Phone Number</label>
+            <input type="number" id="applicationNumber" placeholder="your active phone number">
+            <p id="applicationPhoneError" class="error"></p>
+            <label for="slip">KCSE Result Slip</label>
+            <input type="file" id="slip">
+            <p id="slipError" class="error"></p>
+            <label for="certificate">KCSE Leaving Certificate</label>
+            <input type="file" id="certificate">
+            <p id="certificateError" class="error"></p>
+            <div id="levels">
+                <p>Choose your level of study you wish to enroll for</p>
+                <label><input type="radio" name="study level" value="degree">Degree</label>
+                <label><input type="radio" name="study level" value="masters">Masters</label>
+                <label><input type="radio" name="study level" value="PhD">PhD</label>
+            </div>
+            <button type="submit">Submit</button>
+            <p id="applicationResult"></p>
+        </form>
+    </main>
+
+    <main id="view-login" class="site-view login-view" hidden>
+        <div id="login">
+            <form id="loginForm">
+                <h1>Login</h1>
+                <div>
+                    <label for="loginName">Full Name</label><br>
+                    <input type="text" id="loginName" placeholder="Your name">
+                    <p id="loginNameError" class="error"></p>
+                </div>
+                <div>
+                    <label for="loginEmail">Email</label><br>
+                    <input type="email" id="loginEmail" placeholder="name@example.com">
+                    <p id="loginEmailError" class="error"></p>
+                </div>
+                <div>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" placeholder="Min 8 characters">
+                    <p id="passwordError" class="error"></p>
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirm Password</label><br>
+                    <input type="password" id="confirmPassword" placeholder="Repeat password">
+                    <p id="confirmError" class="error"></p>
+                </div>
+                <button type="submit" id="loginButton">Login</button>
+            </form>
+        </div>
+        <p id="loginResult"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,610 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+}
+
+body[data-view="view-home"] {
+    width: 100%;
+    background-color: transparent;
+    color: #333;
+    line-height: 1.6;
+    background-size: cover;
+    scroll-behavior: smooth;
+    overflow-x: clip;
+}
+
+body[data-view="view-learn-more"] {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body[data-view="view-apply"] {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(32, 22, 22);
+    color: aliceblue;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+body[data-view="view-login"] {
+    margin: 0;
+    padding: 0;
+    color: rgb(8, 5, 5);
+}
+
+.site-view[hidden] {
+    display: none !important;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 16px;
+    color: #087f39;
+}
+
+.home-view,
+.home-view * {
+    overflow-x: hidden;
+}
+
+.home-view nav ul {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 15px;
+    margin-left: 3%;
+    display: flex;
+    justify-content: center;
+    background-color: #0f0f0f;
+    width: 93%;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.home-view nav ul li a {
+    color: rgb(240, 236, 236);
+    display: block;
+    padding: 12px 25px;
+    text-decoration: none;
+    word-spacing: 10px;
+}
+
+.home-view nav ul li a:hover {
+    background-color: rgb(7, 194, 63);
+}
+
+.home-view nav ul li a:active {
+    background-color: green;
+}
+
+.home-view .page {
+    padding-top: 80px;
+    opacity: 1;
+    padding: 35px;
+    border-radius: 8px;
+}
+
+.home-view .page.active {
+    display: block;
+}
+
+.home-view .page h2 {
+    color: #0ceb17e8;
+}
+
+.home-view .home-image,
+.home-view .research-image,
+.home-view .innovation-image,
+.home-view .complex-image {
+    width: 30%;
+    height: 300px;
+    border-radius: 9px;
+}
+
+.home-view .research-image,
+.home-view .innovation-image,
+.home-view .complex-image {
+    display: block;
+    margin-right: auto;
+}
+
+.home-view .page h3 {
+    color: #0ddb40;
+}
+
+.home-view .hero {
+    background-color: #e8f1f8;
+    text-align: center;
+    border-radius: 9px;
+}
+
+.home-view .hero h2 {
+    font-size: 32px;
+}
+
+.home-view .button {
+    background-color: #12e61c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.home-view .apply {
+    background-color: #0aeb16;
+    margin-left: 130px;
+    padding: 12px 25px;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+.home-view .apply:hover {
+    background-color: #088b4c;
+    transition: background-color 0.9s ease-in-out;
+    cursor: pointer;
+}
+
+.home-view button:hover {
+    background-color: #4df063;
+    opacity: 0.7;
+}
+
+.home-view .cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.home-view .card {
+    padding: 25px;
+    background-color: #f1f5f8;
+    border-left: 5px solid #07a30f;
+    border-radius: 5px;
+}
+
+.home-view .card h2 {
+    color: #046409;
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+.home-view .card h3 {
+    color: #06970d;
+}
+
+.home-view .news-item h3 {
+    margin-top: 20px;
+}
+
+.home-view .news-item small {
+    color: #777;
+    font-weight: bold;
+}
+
+.home-view .student-list {
+    margin: 20px;
+    padding: 10px;
+}
+
+.home-view .student-list li {
+    padding: 8px;
+}
+
+.home-view .contact-info {
+    background-color: #f1f5f8;
+    padding: 20px;
+}
+
+.home-view form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 9px;
+    width: 100%;
+    height: auto;
+    margin: 0 0 10px;
+}
+
+.home-view input,
+.home-view textarea {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.home-view textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.home-view .footer {
+    background-color: #088b4c;
+    color: white;
+    text-align: center;
+    padding: 18px 14px;
+    border-radius: 7px;
+    width: 86%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+.home-view .submit {
+    font-size: 20px;
+    background-color: #0aeb16;
+    color: black;
+    width: 40%;
+    border-radius: 7px;
+    border-color: #e8f1f8;
+    padding: 11px;
+    margin-left: 100px;
+    margin-top: 9px;
+}
+
+.home-view #menuButton,
+.home-view #closeMenuButton {
+    display: none;
+}
+
+.home-view .error {
+    color: red;
+}
+
+.home-view .ok {
+    color: green;
+}
+
+.learn-more-view,
+.learn-more-view * {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.learn-more-view .welcome h2,
+.learn-more-view > h2 {
+    font-size: 1.9rem;
+    padding: 16px;
+    color: rgb(239, 245, 239);
+    background-color: rgb(8, 175, 8);
+    border-radius: 9px;
+    margin: 17px;
+}
+
+.learn-more-view .welcome p {
+    background-color: transparent;
+    font-size: 1.2rem;
+    padding: 17px;
+    color: black;
+}
+
+.learn-more-view .message {
+    font-size: 1.3rem;
+    color: rgb(26, 7, 7);
+    padding: 18px;
+    background-color: #d9ebdc;
+    margin: 17px;
+    border-radius: 9px;
+}
+
+.learn-more-view .images {
+    width: 50%;
+    height: 50%;
+    border-radius: 9px;
+    display: block;
+    margin: 20px;
+}
+
+.learn-more-view h2 {
+    font-size: 2rem;
+    padding: 16px;
+    color: rgb(239, 245, 239);
+    background-color: rgb(8, 175, 8);
+    border-radius: 9px;
+    margin: 17px;
+}
+
+.learn-more-view .para {
+    font-size: 19px;
+    padding: 17px;
+    background-color: #d9ebdc;
+    border-radius: 10px;
+    color: rgb(3, 17, 29);
+    margin: 17px;
+}
+
+.learn-more-view .para b {
+    color: rgb(10, 165, 74);
+    font-size: 1.5rem;
+}
+
+.learn-more-view h3 {
+    font-size: 1.6rem;
+    color: rgb(10, 165, 74);
+    padding: 18px;
+}
+
+.learn-more-view ul li p b {
+    font-weight: 600;
+    color: rgb(4, 14, 4);
+    margin-bottom: 0;
+}
+
+.learn-more-view ul {
+    border-right: 4px solid rgb(63, 105, 63);
+    margin: 17px;
+}
+
+.learn-more-view .welcome {
+    color: rgb(14, 107, 56);
+}
+
+.apply-view,
+.apply-view * {
+    box-sizing: border-box;
+    background-color: rgb(32, 22, 22);
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.apply-view {
+    min-height: 100vh;
+}
+
+.apply-view #applicationForm {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 3%;
+}
+
+.apply-view #applicationForm input {
+    width: 60%;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-bottom: 3%;
+    padding: 8px;
+}
+
+.apply-view #levels {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.apply-view #levels input {
+    margin: 8px;
+}
+
+.apply-view button {
+    width: 40%;
+    margin-left: 10%;
+    font-size: 28px;
+    border: 1px solid grey;
+    padding: 9px;
+    border-radius: 7px;
+    background-color: rgb(38, 214, 38);
+}
+
+.apply-view button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.apply-view .error {
+    color: red;
+}
+
+.apply-view .ok {
+    color: green;
+}
+
+.login-view,
+.login-view * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(8, 5, 5);
+}
+
+.login-view #login h1 {
+    color: #07c517;
+    text-align: center;
+    font-size: 37px;
+}
+
+.login-view #login {
+    background-color: blanchedalmond;
+    width: 450px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.login-view #loginForm {
+    margin: 30px;
+    width: 100%;
+    font-size: 22px;
+    border-color: 2px solid gray;
+}
+
+.login-view #loginForm input {
+    width: 80%;
+    height: 35px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.login-view #loginButton {
+    font-size: 26px;
+    margin-bottom: 19px;
+    background-color: rgb(14, 235, 32);
+    color: aliceblue;
+    border-radius: 8px;
+    width: 30%;
+    margin-left: 90px;
+}
+
+.login-view #loginButton:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.login-view .error {
+    color: red;
+}
+
+.login-view .ok {
+    color: green;
+}
+
+@media (max-width: 768px) {
+    .home-view #menuButton {
+        display: block;
+        margin-left: 90%;
+        margin-top: 2%;
+        margin-bottom: 0%;
+        background-color: transparent;
+        border: none;
+        font-size: 21px;
+        cursor: pointer;
+    }
+
+    .home-view nav ul {
+        margin-left: auto;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin: 0%;
+        width: 25%;
+        margin-left: 64%;
+        border-radius: 8px;
+        background-color: #0d0f0d;
+        font-size: 20px;
+        line-height: 60%;
+        margin-top: 0%;
+    }
+
+    .home-view nav ul {
+        display: block;
+    }
+
+    .home-view #closeMenuButton {
+        display: block;
+        font-size: 20px;
+        background-color: transparent;
+        top: 12px;
+        right: 220px;
+        border: none;
+        cursor: pointer;
+        margin-left: 60%;
+    }
+
+    .home-view nav ul.open {
+        display: flex;
+    }
+
+    .home-view nav:has(ul.open) #closeMenuButton {
+        display: block;
+    }
+
+    .home-view .cards {
+        flex-direction: column;
+    }
+
+    .home-view .card {
+        margin-bottom: 20px;
+    }
+
+    .home-view .page {
+        padding: 20px;
+        padding-top: 60px;
+    }
+
+    .home-view .hero h2 {
+        font-size: 32px;
+    }
+
+    .home-view .apply,
+    .home-view .submit {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    .home-view nav ul li a {
+        padding: 12px;
+        font-size: 17px;
+    }
+
+    .home-view .home-image,
+    .home-view .research-image,
+    .home-view .innovation-image,
+    .home-view .complex-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .apply-view,
+    .apply-view * {
+        font-size: 18px;
+    }
+
+    .apply-view #applicationForm {
+        margin: 2%;
+        padding: 13px;
+    }
+
+    .apply-view #applicationForm input {
+        width: 80%;
+    }
+
+    .apply-view #levels {
+        margin: 2%;
+    }
+
+    .apply-view button {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-view .hero h2 {
+        font-size: 28px;
+    }
+
+    .home-view .card {
+        padding: 15px;
+        flex-basis: 100%;
+    }
+
+    .home-view .page {
+        padding: 15px;
+        padding-top: 50px;
+    }
+
+    .home-view nav ul {
+        width: 48%;
+        line-height: 0.5rem;
+    }
+
+    .home-view nav ul li a {
+        padding: 8px 9px;
+        font-size: 12px;
+    }
+}
